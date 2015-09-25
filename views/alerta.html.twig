@@ -1,0 +1,17 @@
+{% if error is defined and error %}
+<div id="alerta" class="alerta show white error">
+    <div class="mensaje">
+        Ha habido un problema al enviar el mensaje. Por Favor, intentelo de nuevo.
+    </div>
+    <button class="unstyled destroy"></button>
+</div>
+{% else %}
+<div id="alerta" class="alerta show white success">
+    <div class="mensaje">
+        Su mensaje se ha enviado correctamente.
+    </div>
+    <button class="unstyled destroy"></button>
+</div>
+{% endif %}
+
+

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <ul id="tabs" class="tabs">
+        <li id="tab_1" class="active">Informacion niños</li>
+        <li id="tab_2">Información adultos</li>
+        <li id="tab_3">Contacto</li>
+    </ul>
+
+    <div id="panel" class="panel">
+        <div id="tabContainer" class="tabContainer">
+            <div id="tabpage_1" class="layout tabpage hidden">
+               {% include 'ninos.html.twig' %}
+            </div>
+            <div id="tabpage_2" class="layout tabpage hidden">
+               {% include 'adultos.html.twig' %}
+            </div>
+            <div id="tabpage_3" class="contacto tabpage hidden">
+                {{ render(url('contact', {'_locale': app.locale })) }}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+

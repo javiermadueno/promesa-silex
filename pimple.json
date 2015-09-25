@@ -1,0 +1,412 @@
+[
+    {
+        "name": "logger",
+        "type": "class",
+        "value": "Monolog\\Logger"
+    },
+    {
+        "name": "routes",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "controllers",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "controllers_factory",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "route_class",
+        "type": "string",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "route_factory",
+        "type": "class",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "exception_handler",
+        "type": "class",
+        "value": "Silex\\ExceptionHandler"
+    },
+    {
+        "name": "dispatcher_class",
+        "type": "string",
+        "value": "Symfony\\Component\\EventDispatcher\\EventDispatcher"
+    },
+    {
+        "name": "dispatcher",
+        "type": "class",
+        "value": "Symfony\\Component\\EventDispatcher\\EventDispatcher"
+    },
+    {
+        "name": "callback_resolver",
+        "type": "class",
+        "value": "Silex\\CallbackResolver"
+    },
+    {
+        "name": "resolver",
+        "type": "class",
+        "value": "Silex\\ControllerResolver"
+    },
+    {
+        "name": "kernel",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\HttpKernel"
+    },
+    {
+        "name": "request_stack",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\RequestStack"
+    },
+    {
+        "name": "request_context",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RequestContext"
+    },
+    {
+        "name": "url_matcher",
+        "type": "class",
+        "value": "Silex\\RedirectableUrlMatcher"
+    },
+    {
+        "name": "request_error",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "request",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\Request"
+    },
+    {
+        "name": "request.http_port",
+        "type": "int",
+        "value": 80
+    },
+    {
+        "name": "request.https_port",
+        "type": "int",
+        "value": 443
+    },
+    {
+        "name": "debug",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "charset",
+        "type": "string",
+        "value": "UTF-8"
+    },
+    {
+        "name": "locale",
+        "type": "string",
+        "value": "es"
+    },
+    {
+        "name": "monolog.logger.class",
+        "type": "string",
+        "value": "Monolog\\Logger"
+    },
+    {
+        "name": "monolog",
+        "type": "class",
+        "value": "Monolog\\Logger"
+    },
+    {
+        "name": "monolog.handler",
+        "type": "class",
+        "value": "Monolog\\Handler\\StreamHandler"
+    },
+    {
+        "name": "monolog.level",
+        "type": "int",
+        "value": 100
+    },
+    {
+        "name": "monolog.listener",
+        "type": "class",
+        "value": "Silex\\EventListener\\LogListener"
+    },
+    {
+        "name": "monolog.name",
+        "type": "string",
+        "value": "myapp"
+    },
+    {
+        "name": "monolog.bubble",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "monolog.permission",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "monolog.logfile",
+        "type": "string",
+        "value": "\/Users\/javi\/Code\/promesa\/app\/..\/logs\/development.log"
+    },
+    {
+        "name": "validator",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Validator\\RecursiveValidator"
+    },
+    {
+        "name": "validator.builder",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\ValidatorBuilder"
+    },
+    {
+        "name": "validator.mapping.class_metadata_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Mapping\\Factory\\LazyLoadingMetadataFactory"
+    },
+    {
+        "name": "validator.validator_factory",
+        "type": "class",
+        "value": "Silex\\ConstraintValidatorFactory"
+    },
+    {
+        "name": "validator.object_initializers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "validator.validator_service_ids",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.secret",
+        "type": "string",
+        "value": "5ca315d0121be7cba78ba973dc9ec042"
+    },
+    {
+        "name": "form.types",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.type.extensions",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.type.guessers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.extension.csrf",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\Extension\\Csrf\\CsrfExtension"
+    },
+    {
+        "name": "form.extensions",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "form.factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\FormFactory"
+    },
+    {
+        "name": "form.resolved_type_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Form\\ResolvedFormTypeFactory"
+    },
+    {
+        "name": "form.csrf_provider",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Csrf\\CsrfTokenManager"
+    },
+    {
+        "name": "fragment.handler",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\FragmentHandler"
+    },
+    {
+        "name": "fragment.renderer.inline",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\InlineFragmentRenderer"
+    },
+    {
+        "name": "fragment.renderer.hinclude",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\HIncludeFragmentRenderer"
+    },
+    {
+        "name": "fragment.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\FragmentListener"
+    },
+    {
+        "name": "uri_signer",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\UriSigner"
+    },
+    {
+        "name": "uri_signer.secret",
+        "type": "string",
+        "value": "5ca315d0121be7cba78ba973dc9ec042"
+    },
+    {
+        "name": "fragment.path",
+        "type": "string",
+        "value": "\/_fragment"
+    },
+    {
+        "name": "fragment.renderer.hinclude.global_template",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "fragment.renderers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "url_generator",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\Generator\\UrlGenerator"
+    },
+    {
+        "name": "twig.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.form.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.path",
+        "type": "string",
+        "value": "\/Users\/javi\/Code\/promesa\/app\/..\/views"
+    },
+    {
+        "name": "twig.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig",
+        "type": "class",
+        "value": "Twig_Environment"
+    },
+    {
+        "name": "twig.loader.filesystem",
+        "type": "class",
+        "value": "Twig_Loader_Filesystem"
+    },
+    {
+        "name": "twig.loader.array",
+        "type": "class",
+        "value": "Twig_Loader_Array"
+    },
+    {
+        "name": "twig.loader",
+        "type": "class",
+        "value": "Twig_Loader_Chain"
+    },
+    {
+        "name": "translator",
+        "type": "class",
+        "value": "Silex\\Translator"
+    },
+    {
+        "name": "translator.resources",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "translator.message_selector",
+        "type": "class",
+        "value": "Symfony\\Component\\Translation\\MessageSelector"
+    },
+    {
+        "name": "translator.domains",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "locale_fallbacks",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "translator.cache_dir",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "swiftmailer.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "swiftmailer.use_spool",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "mailer.initialized",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "mailer",
+        "type": "class",
+        "value": "Swift_Mailer"
+    },
+    {
+        "name": "swiftmailer.spooltransport",
+        "type": "class",
+        "value": "Swift_Transport_SpoolTransport"
+    },
+    {
+        "name": "swiftmailer.spool",
+        "type": "class",
+        "value": "Swift_MemorySpool"
+    },
+    {
+        "name": "swiftmailer.transport",
+        "type": "class",
+        "value": "Swift_Transport_EsmtpTransport"
+    },
+    {
+        "name": "swiftmailer.transport.buffer",
+        "type": "class",
+        "value": "Swift_Transport_StreamBuffer"
+    },
+    {
+        "name": "swiftmailer.transport.authhandler",
+        "type": "class",
+        "value": "Swift_Transport_Esmtp_AuthHandler"
+    },
+    {
+        "name": "swiftmailer.transport.eventdispatcher",
+        "type": "class",
+        "value": "Swift_Events_SimpleEventDispatcher"
+    },
+    {
+        "name": "twig.form.engine",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\Form\\TwigRendererEngine"
+    },
+    {
+        "name": "twig.form.renderer",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\Form\\TwigRenderer"
+    }
+]

@@ -1,0 +1,21 @@
+contacto: Contacto
+boton.enviar: Enviar
+
+form:
+  contacto:
+    nombre:
+      label: Nombre
+      placeholder: Nombre
+      notblank: Por favor introduzca un nombre
+    apellidos:
+      label: Apellidos
+      placeholder: Apellidos
+    email:
+      label: Email
+      placeholder: Introduzca su email
+      notblank: Por favor introduzca una direccion de email válida
+    mensaje:
+      label: Mensaje
+      placeholder: Introduzca su mensaje
+      notblank: El mensaje no puede estar en blanco
+    submit: Enviar

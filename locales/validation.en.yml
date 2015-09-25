@@ -1,0 +1,8 @@
+form:
+  contacto:
+    nombre:
+      notblank: Please enter yout name
+    email:
+      notblank: Please enter a valid email address
+    mensaje:
+      notblank: Message can not be empty

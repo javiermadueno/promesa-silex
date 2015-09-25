@@ -1,0 +1,18 @@
+contacto: Contact
+boton.enviar: Send
+
+form:
+  contacto:
+    nombre:
+      label: Name
+      placeholder: Name
+    apellidos:
+      label: Surname
+      placeholder: Surname
+    email:
+      label: Email
+      placeholder: Enter your email
+    mensaje:
+      label: Message
+      placeholder: Write your message here...
+    submit: Send

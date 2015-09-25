@@ -1,0 +1,56 @@
+{{ form_start(form) }}
+<div class="row">
+    <div class="control-group {% if not form.nombre.vars.valid %}error{% endif %}">
+        <div class="controls">
+            {{ form_widget(form.nombre) }}
+            <span class="help-inline">
+                {% for error in form.nombre.vars.errors %}
+                    {{ error.message }} <br/>
+                {% endfor %}
+            </span>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="control-group {% if not form.apellidos.vars.valid %}error{% endif %}">
+        <div class="controls">
+            {{ form_widget(form.apellidos) }}
+            <span class="help-inline">
+                {% for error in form.apellidos.vars.errors %}
+                    {{ error.message }} <br/>
+                {% endfor %}
+            </span>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="control-group {% if not form.email.vars.valid %}error{% endif %}">
+        <div class="controls">
+            {{ form_widget(form.email) }}
+            <span class="help-inline">
+                {% for error in form.email.vars.errors %}
+                    {{ error.message }} <br/>
+                {% endfor %}
+            </span>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="control-group {% if not form.mensaje.vars.valid %}error{% endif %}">
+        <div class="controls">
+            {{ form_widget(form.mensaje) }}
+            <span class="help-inline">
+                {% for error in form.mensaje.vars.errors %}
+                    {{ error.message }} <br/>
+                {% endfor %}
+            </span>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">{{ form_row(form.submit) }}</div>
+{{ form_end(form) }}

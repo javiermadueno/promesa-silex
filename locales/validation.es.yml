@@ -1,0 +1,8 @@
+form:
+  contacto:
+    nombre:
+      notblank: Por favor introduzca un nombre
+    email:
+      notblank: Por favor introduzca una direccion de email válida
+    mensaje:
+      notblank: El mensaje no puede estar en blanco
