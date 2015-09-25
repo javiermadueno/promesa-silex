@@ -5,6 +5,8 @@ require_once __DIR__ . '/bootstrap.php';
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
+use Monolog\Logger;
+use Monolog\Handler\RotatingFileHandler;
 
 $app = new Application();
 
@@ -37,6 +39,10 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), [
     ]
 ]);
 
+$pp['monolog'] = $app->share($app->extend('monolog', function($monolog, $app) {
+    $monolog->pushHandler(new RotatingFileHandler($app['monolog.filename'], 10, Logger::DEBUG));
+    return $monolog;
+}));
 
 $app['translator'] = $app->share($app->extend('translator', function ($translator, $app) {
     $translator->addLoader('yaml', new YamlFileLoader());
@@ -65,8 +71,7 @@ $call_back_locale = function (Request $request, Application $app) {
     $request->setLocale($locale);
 };
 
-$app
-    ->before($call_back_locale);
+$app->before($call_back_locale);
 
 $app
     ->get('/', 'Promesa\Front\Controller\FrontController::indexAction')
