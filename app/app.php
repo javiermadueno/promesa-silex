@@ -40,7 +40,7 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), [
 ]);
 
 $pp['monolog'] = $app->share($app->extend('monolog', function($monolog, $app) {
-    $monolog->pushHandler(new RotatingFileHandler($app['monolog.filename'], 10, Logger::DEBUG));
+    $monolog->pushHandler(new RotatingFileHandler($app['monolog.logfile'], 10, Logger::DEBUG));
     return $monolog;
 }));
 

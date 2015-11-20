@@ -16,3 +16,27 @@ form:
       label: Message
       placeholder: Write your message here...
     submit: Send
+
+informacion:
+  ninos:
+    titulo: Promise of Our Lady of Fatima
+    titulo2: In Catechism with Children
+    intro: This Little book has the intention of incresing and developing the devotion and love of the children to Our Lady, and to help them to live the sacraments. It consists of making the Promise of Fatima step by step in their catechism lessons. The Promise is made during five consecutive first Saturdays of Month (this is every first Saturday in the month, for five consecutive months; 5 days altogether). During their catechism lessons, the children prepare the First Saturday of the following Month. During their lessons, the children would have to prepare the following aspects:
+    list:
+      1: Meditation: The meditation of the Rosary that he/she likes best
+      2: Prayer: The child chooses an intention in order to say it in the prayer of the Rosary on the next first Saturday.
+      3: Confession: The child writes down his faults during that month so that they could be remembered on the first Saturday. This way the child will make a better confession.
+      4: Communion: The child chooses from the ideas given in the little book, the one he/she likes the most. They write it down on the booklet to remember it on the first Saturday.
+      5: Consolation of the Immaculate Heart of Mary: The child chooses what he could offer to Her. The book has many coloring pages so that the child also has fun. I hope you spread this little book everywhere you can and also that your kids enjoy it
+    boton.descarga: Download notebook
+  adultos:
+    titulo: PRAYER GROUPS TO THE IMACULATE HEART OF MARY
+    p1: These prayer groups would have ten people approximately. The members of the group could be couples of marriages or singles. They would be guided by a priest. The acts of the Promise (Eucharist, Rosary, Meditation, Confession) would be made in the houses of the members.
+    p2: The members of the group will not only pray and meditate, but also live the sacraments of the Eucharist and Confession.
+    p3: This group would only be committed to do the promise for five consecutive first Saturdays of month. After finishing the promise, another groups could be made, but not necessarily with the same members.
+    p4: Our Lord and Our Lady asked us for it in Pontevedra, therefore we invite all those with a devotion to Our Lady (Our Lady of Fatima, Our Lady of Peace, Our Lady of Sorrows, etc) to do this act of reparation to Her Immaculate Heart.
+    p5: Concerning all this, the World Apostolate of Fatima provides information which helps us to do the meditations. This information would be received by the members of the group at the beginning, so that they could be prepared beforehand. These meditations are “The Mercy of the Lord” and a brief meditation on the mysteries of the Rosary.
+    p6: Finally, we provide a little tale called “A key”, that could help not only the catechists, but also anybody to understand a bit better this mystery.
+    boton:
+      meditaciones: Download Meditations
+      llave: Download the Key

@@ -19,3 +19,29 @@ form:
       placeholder: Introduzca su mensaje
       notblank: El mensaje no puede estar en blanco
     submit: Enviar
+
+
+informacion:
+  ninos:
+    titulo: Promesa de la Virgen de Fátima
+    titulo2: Hecha en catequesis a niños pequeños
+    intro: Este cuaderno está hecho con la intención de aumentar la devoción en los niños a nuestra Madre la Virgen María y que los niños vivan los sacramentos.El cuaderno consiste en hacer la promesa de la Virgen de Fátima poco a poco en catequesis. La promesa se hace en cinco sábados (cada uno es primer sábado de mes).Pues bien, el niño en catequesis va preparando su siguiente “primer sábado”.Dentro de los diferentes apartados del cuaderno, el niño va escogiendo:
+    list:
+      1: Meditación: La meditación del rosario que más le guste.
+      2: Oración: Elige la intención que más le guste por la que se va a rezar el rosario el sábado de la promesa.
+      3: Confesión: El niño va anotando sus faltas cometidas durante ese mes para ser recordadas el sábado de la promesa y hacer una buena confesión.
+      4: Comunión: El niño elige entre las anotaciones que hay la que más le guste escribiéndola en su ficha y así recordar que le diría al Señor el día de la comunión del primer sábado.
+      5: Consolación a la Virgen: El niño elige qué podría ofrecerle.Dicho cuaderno contiene dibujos para colorear con la intención de que el niño haga la promesa además de pasárselo bien. Rogándole su difusión espero que le sirva y que sus niños lo disfruten.
+    boton.descarga: Descarga cuaderno
+  adultos:
+    titulo: GRUPOS DE ORACIÓN AL INMACULADO CORAZON DE MARÍA
+    p1: Estos grupos de oración consistiría en la formación de un determinado grupo bien sea de matrimonios o no, dirigidos por el sacerdote, en un numero de diez personas aproximadamente donde el acto de la promesa (celebración de la Eucaristía, rosario, meditación, confesión ) se haga en los distintos domicilios de las personas.
+    p2: Estos grupos de oración tienen de bueno que no solo se reza y medita sino que también se viven los sacramentos eucaristía y confesión.
+    p3: Además tienen la ventaja del compromiso, es decir que las personas se comprometen a cinco reuniones solamente; ni que decir tiene que al finalizar la promesa una persona o un matrimonio quiera empezar otro grupo de oración con otras personas.
+    p4: Y por ultimo tiene la gran ventaja que nos lo pidió el Señor y la Virgen en Pontevedra, por eso invitamos desde aquí a todas las personas que tengan devoción a nuestra Madre ( Virgen de la Paz, de los Dolores, del Rocío, …etc ) que no se queden sin hacer este acto de desagravio a su Corazón.
+    p5: Según esto el Apostolado mundial de Fátima aporta unos escritos que ayudan a hacer las meditaciones, las cuales serían entregadas al formarse el grupo para que de esta forma puedan prepararse con antelación. Dichas meditaciones son “ Misericordia del Señor “ y una breve meditación de los misterios del rosario.
+    p6: Por último aportamos un cuentecito pequeño llamado “una llave” que puede servir no solo a los catequistas sino a cualquier persona a comprender un poco este misterio.
+    boton:
+      meditaciones: Descarga Meditaciones
+      llave: Descarga la LLave
+
