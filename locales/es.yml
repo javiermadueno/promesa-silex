@@ -1,6 +1,12 @@
+titulo: Promesa de la Virgen de Fátima
 contacto: Contacto
 contacto.info: Para ponerse en contacto conmigo, por favor rellene el formulario.
 boton.enviar: Enviar
+
+archivo:
+  cuaderno: Promesa de la virgen de fatima hecha en catequesis
+  meditacion: Meditacion de misterios
+  llave: Una llave
 
 form:
   contacto:

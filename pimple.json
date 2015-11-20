@@ -107,7 +107,7 @@
     {
         "name": "locale",
         "type": "string",
-        "value": "en"
+        "value": "es"
     },
     {
         "name": "monolog.logger.class",

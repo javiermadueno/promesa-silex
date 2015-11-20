@@ -1,6 +1,12 @@
+titulo: Promise of our Lady of Fatima
 contacto: Contact
 contacto.info: To contact me, please fill out the form.
 boton.enviar: Send
+
+archivo:
+  cuaderno: Our Lady of Fatima
+  meditacion: The Mercy of the Lord
+  llave: A key
 
 form:
   contacto:

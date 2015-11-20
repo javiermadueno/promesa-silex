@@ -7,10 +7,14 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Monolog\Logger;
 use Monolog\Handler\RotatingFileHandler;
+use Symfony\Component\HttpFoundation\Cookie;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 $app = new Application();
 
-$app['debug'] = true;
+$app['debug'] = false;
+
+$app['enabled.locales'] = ['es', 'en'];
 
 
 $app->register(new Sorien\Provider\PimpleDumpProvider());
@@ -64,10 +68,14 @@ $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
 }));
 
 $call_back_locale = function (Request $request, Application $app) {
+    $monolog = $app['monolog'];
 
-    $locale = $request->getPreferredLanguage(['es', 'en']);
+    if( null === ($locale = $request->cookies->get('locale'))) {
+        $locale = $request->getPreferredLanguage($app['enabled.locales']);
+    }
     $app['translator']->setLocale($locale);
-    $app['monolog']->addDebug('Lengua preferida: ' . $locale);
+    $monolog->addDebug('Accepted-Languages: ' . implode(', ', $request->getLanguages()));
+    $monolog->addDebug('Lengua preferida: ' . $locale);
     $request->setLocale($locale);
 };
 
@@ -84,6 +92,13 @@ $app
 
 $app->get('/file', 'Promesa\Front\Controller\FrontController::sendFileAction')
     ->bind('file');
+
+$app->get('/{_locale}/cookie', function($_locale){
+    $cookie = new Cookie('locale', $_locale, time() + (1 * 365 * 24 * 60 * 60) );
+    $response  = new RedirectResponse('/');
+    $response->headers->setCookie($cookie);
+    return $response;
+})->bind('cookie');
 
 return $app;
 

@@ -2,9 +2,9 @@
 <html lang="{{ app.locale }}">
 <head>
     <meta charset="UTF-8">
-    <title>Promesa de la Virgen de Fátima</title>
+    <title>{{ 'titulo'|trans }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css?v=1.4') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css?v=1.5') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ asset('js/jquery.backstretch.min.js') }}"></script>
     <script src="{{ asset('js/front.js') }}"></script>
@@ -32,6 +32,18 @@
 <div id="alerts"></div>
 <div class="bg">
     {% block content %}{% endblock content %}
+</div>
+
+<div id="languages">
+    <a href="{{ path('cookie', {'_locale': 'es'}) }}">
+        <img src="{{ asset("img/blank.png") }}" class="flag flag-es" alt="">
+    </a>
+    <a href="{{ path('cookie', {'_locale': 'en'}) }}">
+        <img src="{{ asset("img/blank.png") }}" class="flag flag-gb" alt="">
+    </a>
+    <a href="{{ path('cookie', {'_locale': 'pt'}) }}">
+        <img src="{{ asset("img/blank.png") }}" class="flag flag-pt" alt="">
+    </a>
 </div>
 
 {% block javascript %}

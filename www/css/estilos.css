@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300);
 @import url("museosans/stylesheet.css");
+@import url("flags.css");
 
 html,
 body{
@@ -255,6 +256,12 @@ button, input[type="submit"]{
 
 #tabcontent_2{
 	display:none;
+}
+
+#languages {
+	position: absolute;
+	top: 10px;
+	right: 5px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */

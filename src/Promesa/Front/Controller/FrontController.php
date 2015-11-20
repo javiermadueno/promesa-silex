@@ -9,12 +9,14 @@ namespace Promesa\Front\Controller;
 
 use Silex\Application;
 use Swift_Message;
+use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Finder\Finder;
 
 class FrontController
 {
@@ -126,20 +128,35 @@ class FrontController
     public function sendFileAction(Request $request, Application $app)
     {
         $file = $request->query->get('file', '');
+        $locale = $request->query->get('locale', 'es');
+
         $base_path = $request->getBasePath();
-        $file_path = $base_path . 'download/' . $file;
+        $base_path = $base_path . 'download/'.$locale;
+        $file_path = $base_path.'/'. $file;
 
-        $log = $app['monolog'];
-
-        $log->addInfo(sprintf('Se ha solicitado el archivo: %s', $file_path));
-
-        if (!file_exists($file_path)) {
-            $log->addError('No se ha encontrado el fichero');
-            $app->abort(Response::HTTP_NO_CONTENT, 'No se ha encontrado el fichero solicitado');
+        $finder = new Finder();
+        $finder->files()->in($base_path)->name('*'.$file.'*');
+        $file = null;
+        foreach($finder as $archivo) {
+            /** @var SplFileInfo $file */
+            $file = $archivo;
+            break;
         }
 
-        return $app->sendFile($file_path)
-            ->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $file);
+        if (null === $file ) {
+            return $app->redirect('/');
+        }
+
+        $log = $app['monolog'];
+        $nombre = $file->getBasename('.'.$file->getExtension());
+        $nombre = $app['translator']->trans(sprintf("%s.%s", 'archivo', $nombre));
+        $nombre = $nombre.'.'.$file->getExtension();
+
+        $log->addInfo($nombre);
+        $log->addInfo(sprintf('Se ha solicitado el archivo: %s', $file_path));
+
+        return $app->sendFile($file)
+            ->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $nombre);
     }
 
 } 

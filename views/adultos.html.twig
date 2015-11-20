@@ -11,12 +11,12 @@
 </div>
 
 <div class="descarga">
-    <a href="{{ path('file', {'file': 'meditacion de misterios.pdf'}) }}" target="_blank"
+    <a href="{{ path('file', {'file': 'meditacion'}) }}" target="_blank"
        onclick="ga('send','event','boton','Descarga','Meditaciones');" class="btn">
 
         {{ 'informacion.adultos.boton.meditaciones'|trans }}
     </a>
-    <a href="{{ path('file', {'file': 'una llave.pdf'}) }}" target="_blank"
+    <a href="{{ path('file', {'file': 'llave', 'locale': app.request.locale}) }}" target="_blank"
        onclick="ga('send','event','boton','Descarga', 'Llave');" class="btn">
         {{ 'informacion.adultos.boton.llave'|trans }}
     </a>
