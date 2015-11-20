@@ -1,4 +1,5 @@
 contacto: Contact
+contacto.info: To contact me, please fill out the form.
 boton.enviar: Send
 
 form:
@@ -19,6 +20,7 @@ form:
 
 informacion:
   ninos:
+    pestana: Information for children
     titulo: Promise of Our Lady of Fatima
     titulo2: In Catechism with Children
     intro: This Little book has the intention of incresing and developing the devotion and love of the children to Our Lady, and to help them to live the sacraments. It consists of making the Promise of Fatima step by step in their catechism lessons. The Promise is made during five consecutive first Saturdays of Month (this is every first Saturday in the month, for five consecutive months; 5 days altogether). During their catechism lessons, the children prepare the First Saturday of the following Month. During their lessons, the children would have to prepare the following aspects:
@@ -30,6 +32,7 @@ informacion:
       5: Consolation of the Immaculate Heart of Mary: The child chooses what he could offer to Her. The book has many coloring pages so that the child also has fun. I hope you spread this little book everywhere you can and also that your kids enjoy it
     boton.descarga: Download notebook
   adultos:
+    pestana: Information for adults
     titulo: PRAYER GROUPS TO THE IMACULATE HEART OF MARY
     p1: These prayer groups would have ten people approximately. The members of the group could be couples of marriages or singles. They would be guided by a priest. The acts of the Promise (Eucharist, Rosary, Meditation, Confession) would be made in the houses of the members.
     p2: The members of the group will not only pray and meditate, but also live the sacraments of the Eucharist and Confession.

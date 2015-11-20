@@ -107,7 +107,7 @@
     {
         "name": "locale",
         "type": "string",
-        "value": "es"
+        "value": "en"
     },
     {
         "name": "monolog.logger.class",
@@ -362,7 +362,7 @@
     {
         "name": "mailer.initialized",
         "type": "bool",
-        "value": true
+        "value": false
     },
     {
         "name": "mailer",

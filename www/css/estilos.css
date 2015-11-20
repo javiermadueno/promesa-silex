@@ -55,7 +55,9 @@ ul.tabs{
 	overflow: hidden;
 }
 ul.tabs li{
-	
+	max-width: 153px;
+	word-break: unset;
+	font-size: 0.8rem;
 	float:left;
 	padding:10px;
 	border-radius: 3px 3px 0 0;

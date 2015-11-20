@@ -1,38 +1,23 @@
 <div class="titulo">
-    GRUPOS DE ORACIÓN AL INMACULADO CORAZON DE MARÍA
+    {{ 'informacion.adultos.titulo'|trans }}
 </div>
 <div class="descripccion">
-    <p>Estos grupos de oración consistiría en la formación de un determinado grupo bien sea de
-        matrimonios o no, dirigidos por el sacerdote, en un numero de diez personas aproximadamente
-        donde el acto de la promesa (celebración de la Eucaristía, rosario, meditación, confesión )
-        se haga en los distintos domicilios de las personas.</p>
-
-    <p>Estos grupos de oración tienen de bueno que no solo se reza y medita sino que también se
-        viven los sacramentos eucaristía y confesión.</p>
-
-    <p>Además tienen la ventaja del compromiso, es decir que las personas se comprometen a cinco
-        reuniones solamente; ni que decir tiene que al finalizar la promesa una persona o un
-        matrimonio quiera empezar otro grupo de oración con otras personas.</p>
-
-    <p>Y por ultimo tiene la gran ventaja que nos lo pidió el Señor y la Virgen en Pontevedra, por
-        eso invitamos desde aquí a todas las personas que tengan devoción a nuestra Madre ( Virgen
-        de la Paz, de los Dolores, del Rocío, …etc ) que no se queden sin hacer este acto de
-        desagravio a su Corazón.</p>
-
-    <p>Según esto el Apostolado mundial de Fátima aporta unos escritos que ayudan a hacer las
-        meditaciones, las cuales serían entregadas al formarse el grupo para que de esta forma
-        puedan prepararse con antelación. Dichas meditaciones son “ Misericordia del Señor “ y una
-        breve meditación de los misterios del rosario.</p>
-
-    <p>Por último aportamos un cuentecito pequeño llamado “una llave” que puede servir no solo a los
-        catequistas sino a cualquier persona a comprender un poco este misterio.</p>
-
+    <p>{{ 'informacion.adultos.p1'|trans }}</p>
+    <p>{{ 'informacion.adultos.p2'|trans }}</p>
+    <p>{{ 'informacion.adultos.p3'|trans }}</p>
+    <p>{{ 'informacion.adultos.p4'|trans }}</p>
+    <p>{{ 'informacion.adultos.p5'|trans }}</p>
+    <p>{{ 'informacion.adultos.p6'|trans }}</p>
 </div>
 
 <div class="descarga">
     <a href="{{ path('file', {'file': 'meditacion de misterios.pdf'}) }}" target="_blank"
-       onclick="ga('send','event','boton','Descarga','Meditaciones');" class="btn"> Descarga
-        Meditaciones</a>
+       onclick="ga('send','event','boton','Descarga','Meditaciones');" class="btn">
+
+        {{ 'informacion.adultos.boton.meditaciones'|trans }}
+    </a>
     <a href="{{ path('file', {'file': 'una llave.pdf'}) }}" target="_blank"
-       onclick="ga('send','event','boton','Descarga', 'Llave');" class="btn"> Descarga la LLave</a>
+       onclick="ga('send','event','boton','Descarga', 'Llave');" class="btn">
+        {{ 'informacion.adultos.boton.llave'|trans }}
+    </a>
 </div>
