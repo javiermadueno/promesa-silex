@@ -1,8 +1,8 @@
 form:
   contacto:
     nombre:
-      notblank: Por favor, indique um nome
+      notblank: Por favor introduzca un nombre
     email:
-      notblank: Por favor insira um endereço de email válido
+      notblank: Por favor introduzca una direccion de email válida
     mensaje:
       notblank: El mensaje no puede estar en blanco
