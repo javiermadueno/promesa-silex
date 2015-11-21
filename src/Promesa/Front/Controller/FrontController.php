@@ -128,7 +128,7 @@ class FrontController
     public function sendFileAction(Request $request, Application $app)
     {
         $file = $request->query->get('file', '');
-        $locale = $request->query->get('locale', 'es');
+        $locale = $request->getLocale();
 
         $base_path = $request->getBasePath();
         $base_path = $base_path . 'download/'.$locale;

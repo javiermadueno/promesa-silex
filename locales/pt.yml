@@ -1,0 +1,51 @@
+titulo: Promessa da Virgem de Fátima
+contacto: Contato
+contacto.info: Para entrar em contato comigo, por favor preencha o formulário.
+boton.enviar: Enviar
+
+archivo:
+  cuaderno:  Nossa Senhora de Fatima
+  meditacion: A Misericordia do Senhor
+  llave: Uma chave
+
+form:
+  contacto:
+    nombre:
+      label: Nome
+      placeholder: Nome
+    apellidos:
+      label: Sobrenome
+      placeholder: Sobrenome
+    email:
+      label: Email
+      placeholder: Digite seu e-mail
+    mensaje:
+      label: Mensagem
+      placeholder: Escreva sua mensagem aqui ...
+    submit: Enviar
+
+informacion:
+  ninos:
+    pestana: Informações crianças
+    titulo: Promessa da Virgem de Fátima
+    titulo2: Feita em catequeses para crianças pequenas
+    intro: Este caderno foi feito com a intenção de aumentar a devoção das crianças a nossa Mãe, a Virgem Maria, e de que as crianças vivam os sacramentos. O caderno consiste em fazer a promessa da Virgem de Fátima pouco a pouco,  na catequese. A promessa é feita em cinco sábados (cada um deles é o primeiro sábado do mês). Pois bem, a criança na catequese vai preparando seu “primeiro sábado” seguinte. Dentro dos diferentes capítulos do caderno, a criança vai escolhendo:
+    list:
+      1: Meditação: A meditação do rosário que mais lhe agrade.
+      2: Oração: Escolhe a intenção que mais lhe agrade pela qual vai  rezar o rosário no sábado da promessa.
+      3: Confissão: A criança vai anotando suas faltas cometidas durante esse mês para serem recordadas no sábado da promessa e para fazer uma boa confissão.
+      4: Comunhão: A criança escolhe entre as anotações feitas a que mais lhe agrade, escrevendo-a em sua ficha para assim recordar o que diria ao Senhor no dia da comunhão do primeiro sábado.
+      5: Consolação à Virgem: A criança escolhe o que poderia oferecer-lhe. Esse caderno contém desenhos para colorir com a intenção de que a criança faça a promessa e também se divirta. Pedindo-lhe que o difunda, espero que lhe sirva e que suas crianças o aproveitem muito.
+    boton.descarga: Baixar notebook
+  adultos:
+    pestana: Informações adultos
+    titulo: GRUPOS DE ORAÇÃO AO IMACULADO CORAÇÃO DE MARIA
+    p1: Estes grupos de oração consistiriam na formação de um determinado grupo, seja ou não de casais, dirigidos pelo sacerdote, em número de dez pessoas aproximadamente, onde o ato da promessa (celebração da Eucaristia, rosário, meditação, confissão ) seja feito nos diferentes domicílios das pessoas.
+    p2: Estes grupos de oração têm a vantagem de que neles não só se reza e medita, mas também se vivem os sacramentos da eucaristia e da confissão.
+    p3: Além disso, têm a vantagem do compromisso, ou seja, de que as pessoas se comprometem a cinco reuniões somente; nem é preciso dizer que ao finalizar a promessa uma pessoa ou um casal possa querer começar outro grupo de oração com outras pessoas.
+    p4: E, por fim, têm a grande vantagem de que  no-lo pediram o Senhor e a Virgem em Pontevedra, por isso, daqui convidamos a todas as pessoas que tenham devoção a nossa Mãe ( Virgem da Paz, das Dores, do Rocio,… etc. ) que não deixem de fazer este ato de desagravo ao seu Coração.
+    p5: Deste modo, o Apostolado mundial de Fátima contribui com uns escritos que ajudam a fazer as meditações, os quais seriam entregues ao ser formado o grupo para que, desta forma, possam preparar-se com antecedência. Tais meditações são “ Misericórdia do Senhor “ e uma breve meditação dos mistérios do rosário.
+    p6: Por fim, entregamos um pequeno conto chamado “uma chave” que pode servir, não só aos catequistas, mas a qualquer pessoa, para compreender um pouco este mistério.
+    boton:
+      meditaciones: Download de Meditações
+      llave: Download da Chave

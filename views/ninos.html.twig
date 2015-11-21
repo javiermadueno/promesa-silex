@@ -17,18 +17,8 @@
 
 <div class="descarga">
     <a class="btn"
-       href="{{ path('file', {'file': 'cuaderno', 'locale': app.request.locale}) }}"
+       href="{{ path('file', {'file': 'cuaderno'}) }}"
        target="_blank" onClick="ga('send','event','boton','Descarga','Cuaderno');">
         {{ 'informacion.ninos.boton.descarga'|trans }}
     </a>
 </div>
-
-{#
-<div class="descarga">
-    <a class="btn"
-       href="descargas/Promesa%20de%20la%20Virgen%20de%20Fa%CC%81tima%20hecha%20en%20catequesis.pdf"
-       target="_blank" onClick="ga('send','event','boton','Descarga','Cuaderno');">
-        Descarga cuaderno
-    </a>
-</div>
-#}

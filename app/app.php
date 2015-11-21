@@ -14,7 +14,8 @@ $app = new Application();
 
 $app['debug'] = false;
 
-$app['enabled.locales'] = ['es', 'en'];
+$app['enabled.locales'] = ['es', 'en', 'pt'];
+$app['config.locales.regexp'] = 'es|en|pt';
 
 
 $app->register(new Sorien\Provider\PimpleDumpProvider());
@@ -30,6 +31,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
 ]);
 
 $app->register(new Silex\Provider\TranslationServiceProvider(), [
+    'locale' => 'es',
     'locale_fallbacks'    => ['es'],
 ]);
 $app->register(new Silex\Provider\SwiftmailerServiceProvider(), [
@@ -52,8 +54,10 @@ $app['translator'] = $app->share($app->extend('translator', function ($translato
     $translator->addLoader('yaml', new YamlFileLoader());
     $translator->addResource('yaml', __DIR__ . '/../locales/es.yml', 'es');
     $translator->addResource('yaml', __DIR__ . '/../locales/en.yml', 'en');
+    $translator->addResource('yaml', __DIR__ . '/../locales/pt.yml', 'pt');
     $translator->addResource('yaml', __DIR__ . '/../locales/validation.es.yml', 'es', 'validators');
     $translator->addResource('yaml', __DIR__ . '/../locales/validation.en.yml', 'en', 'validators');
+    $translator->addResource('yaml', __DIR__ . '/../locales/validation.pt.yml', 'pt', 'validators');
 
     return $translator;
 }));
@@ -79,18 +83,32 @@ $call_back_locale = function (Request $request, Application $app) {
     $request->setLocale($locale);
 };
 
-$app->before($call_back_locale);
+//$app->before($call_back_locale);
+
+/**
+ * Index URL, automatic redirect to preferred user locale
+ */
+$app->get('/', function (Application $app) {
+    $locale = $app['request']->getPreferredLanguage($app['enabled.locales']);
+    return $app->redirect(
+        $app['url_generator']->generate('homepage', array('_locale' => $locale))
+    );
+});
+
 
 $app
-    ->get('/', 'Promesa\Front\Controller\FrontController::indexAction')
-    ->bind('homepage');
+    ->get('/{_locale}', 'Promesa\Front\Controller\FrontController::indexAction')
+    ->bind('homepage')
+    ->assert('_locale', $app['config.locales.regexp']);
+    //->value("_locale", 'es')
+;
 
 $app
-    ->match('/contact', 'Promesa\Front\Controller\FrontController::contactAction')
+    ->match('/{_locale}/contact', 'Promesa\Front\Controller\FrontController::contactAction')
     ->bind('contact')
-    ->before($call_back_locale);
+;
 
-$app->get('/file', 'Promesa\Front\Controller\FrontController::sendFileAction')
+$app->get('{_locale}/file', 'Promesa\Front\Controller\FrontController::sendFileAction')
     ->bind('file');
 
 $app->get('/{_locale}/cookie', function($_locale){

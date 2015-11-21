@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ 'titulo'|trans }}</title>
+    <link rel="alternate" hreflang="es" href="http://www.promesadelavirgendefatima.com/es">
+    <link rel="alternate" hreflang="en" href="http://www.promesadelavirgendefatima.com/en">
+    <link rel="alternate" hreflang="pt" href="http://www.promesadelavirgendefatima.com/pt">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css?v=1.5') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -35,14 +38,14 @@
 </div>
 
 <div id="languages">
-    <a href="{{ path('cookie', {'_locale': 'es'}) }}">
+    <a href="{{ path('homepage', {'_locale': 'es'}) }}">
         <img src="{{ asset("img/blank.png") }}" class="flag flag-es" alt="">
     </a>
-    <a href="{{ path('cookie', {'_locale': 'en'}) }}">
-        <img src="{{ asset("img/blank.png") }}" class="flag flag-gb" alt="">
+    <a href="{{ path('homepage', {'_locale': 'en'}) }}">
+        <img src="{{ asset("img/blank.png") }}" class="flag flag-us" alt="">
     </a>
-    <a href="{{ path('cookie', {'_locale': 'pt'}) }}">
-        <img src="{{ asset("img/blank.png") }}" class="flag flag-pt" alt="">
+    <a href="{{ path('homepage', {'_locale': 'pt'}) }}">
+        <img src="{{ asset("img/blank.png") }}" class="flag flag-br" alt="">
     </a>
 </div>
 
