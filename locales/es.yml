@@ -4,7 +4,8 @@ contacto.info: Para ponerse en contacto conmigo, por favor rellene el formulario
 boton.enviar: Enviar
 
 archivo:
-  cuaderno: Promesa de la virgen de fatima hecha en catequesis
+  cuaderno: Promesa de la virgen de fatima hecha en catequesis (A4)
+  cuaderno_a5: Promesa de la virgen de fatima hecha en catequesis (A5)
   meditacion: Meditacion de misterios
   llave: Una llave
 
@@ -40,7 +41,8 @@ informacion:
       3: Confesión: El niño va anotando sus faltas cometidas durante ese mes para ser recordadas el sábado de la promesa y hacer una buena confesión.
       4: Comunión: El niño elige entre las anotaciones que hay la que más le guste escribiéndola en su ficha y así recordar que le diría al Señor el día de la comunión del primer sábado.
       5: Consolación a la Virgen: El niño elige qué podría ofrecerle.Dicho cuaderno contiene dibujos para colorear con la intención de que el niño haga la promesa además de pasárselo bien. Rogándole su difusión espero que le sirva y que sus niños lo disfruten.
-    boton.descarga: Descarga cuaderno
+    boton.descarga: Descarga cuaderno (A4)
+    boton.descarga.a5: Descarga cuaderno (A5)
   adultos:
     pestana: Información adultos
     titulo: GRUPOS DE ORACIÓN AL INMACULADO CORAZON DE MARÍA

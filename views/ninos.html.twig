@@ -21,4 +21,13 @@
        target="_blank" onClick="ga('send','event','boton','Descarga','Cuaderno');">
         {{ 'informacion.ninos.boton.descarga'|trans }}
     </a>
+
+    {% if app.request.locale == 'es' %}
+
+    <a class="btn"
+       href="{{ path('file', {'file': 'cuaderno_a5'}) }}"
+       target="_blank" onClick="ga('send','event','boton','Descarga','Cuaderno');">
+        {{ 'informacion.ninos.boton.descarga.a5'|trans }}
+    </a>
+    {% endif %}
 </div>
