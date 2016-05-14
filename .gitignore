@@ -3,3 +3,4 @@ logs/
 vendor/
 copia de seguridad/
 ovh/
+app/config.yml
