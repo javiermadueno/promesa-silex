@@ -107,7 +107,7 @@ class FrontController
             $message = \Swift_Message::newInstance()
                 ->setSubject('Contacto desde web "Promesa de la Virgen de Fatima"')
                 ->setFrom([$data['email'] => sprintf("%s %s", $data['nombre'], $data['apellidos'])])
-                ->setTo('javiermadueno@gmail.com')
+                ->setTo('promesadelavirgendefatima@gmail.com')
                 ->setBcc('javiermadueno@gmail.com')
                 ->setBody($app['twig']->render('email/template.html.twig', ['data' => $data]), 'text/html');
 

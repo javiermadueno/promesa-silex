@@ -17,7 +17,7 @@ $app['debug'] = false;
 $app['enabled.locales'] = ['es', 'en', 'pt'];
 $app['config.locales.regexp'] = 'es|en|pt';
 
-
+$app->register(new \DerAlex\Silex\YamlConfigServiceProvider(__DIR__ .'/config.yml'));
 $app->register(new Sorien\Provider\PimpleDumpProvider());
 $app->register(new Silex\Provider\MonologServiceProvider(), [
     'monolog.logfile' => __DIR__ . '/../logs/development.log',
@@ -36,12 +36,12 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), [
 ]);
 $app->register(new Silex\Provider\SwiftmailerServiceProvider(), [
     'swiftmailer.options' => [
-        'host'       => 'smtp.promesadelavirgendefatima.com',
-        'port'       => '587',
-        'username'   => 'info%promesadelavirgendefatima.com',
-        'password'   => 'pJPIqsq86',
-        'encryption' => null,
-        'auth_mode'  => null
+        'host'       => $app['config']['email']['host'],
+        'port'       => $app['config']['email']['port'],
+        'username'   => $app['config']['email']['username'],
+        'password'   => $app['config']['email']['pass'],
+        'encryption' => $app['config']['email']['encryption'],
+        'auth_mode'  => $app['config']['email']['auth_mode']
     ]
 ]);
 

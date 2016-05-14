@@ -13,7 +13,8 @@
         "symfony/security-csrf": "^2.7",
         "sorien/silex-pimple-dumper": "~1.0",
         "symfony/asset": "^2.7",
-        "symfony/finder": "^2.7"
+        "symfony/finder": "^2.7",
+        "deralex/yaml-config-service-provider": "^1.0"
     },
 
     "autoload": {
